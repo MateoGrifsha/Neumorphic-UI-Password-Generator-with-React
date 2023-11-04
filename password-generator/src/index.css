@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body{
+  background-color: #E0E5EC;
+}
+.input-container{
+  background-color: #E0E5EC;
+  height: 500px;
+  width: 850px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 16px #a3b1c6,
+  -9px -9px 16px #f0f0f0;
+  text-align: center;
+  padding-top: 20px;
+}
+.input-container h1, .inputs{
+  font-family: 'Montserrat', sans-serif;
+  color: #343434
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input[type='range']{
+  width: 30%;
+}
+.checkbox-container{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+input[type='checkbox']{
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0;
+}
+.checkboxes{
+  font-family: 'Montserrat', sans-serif;
+  color: #343434;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2px;
+}
+
+.generate-password{
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #005cc8;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+}
+.generate-password:hover{
+  background-color: #034da1;
+  cursor: pointer;
+}
+.inputs .generated-password{
+  height: 50px;
+  width: 600px;
+  font-size: 22px;
+  border-radius: 5px;
+  box-shadow: 9px 9px 16px #a3b1c6,
+  -9px -9px 16px #e3e3e3;
+  margin-top: 15px;
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.generated-password button{
+  font-size: 10px;
+  color: #a3b1c6;
+  position: absolute;
+  right: 15px;
+  outline: none;
+  border: none;
+  background-color: ghostwhite;
+}
+.generated-password button:hover{
+  color: #343434;
+  cursor: pointer;
+}
+
+.copied-clipboard{
+  cursor: context-menu;
+  font-weight: bold;
+}
+.copied-clipboard:hover{
+  color: #a3b1c6;
+}
